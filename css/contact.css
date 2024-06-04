@@ -1,0 +1,108 @@
+nav{
+  background-color: #FFFFFF;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+    /* The image used */
+     background-image: url("../images/kk.jpg");
+
+    /* Full height */
+    height: 650px;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+
+.contact-inner{
+  padding: 9rem 0;
+
+}
+.form{
+
+    width:450px;
+    height:450px;
+    background:#FFFFFF;
+    margin-top: 20px;
+
+    padding:20px 30px;
+    box-sizing:border-box;
+}
+
+form>label, h2{
+  color:#333333;
+}
+
+h2{
+  text-align:center;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background:#e6e6e6;
+}
+
+textarea{
+  height:100px
+}
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    border:2px;
+    width: 100%;
+    background:#9B51E0;
+    color:#FFFFFF;
+    cursor:pointer;
+    transition:all .3s
+}
+button:hover{
+    color:#333333;
+}
+/* Media Quary for small screen */
+@media screen and (max-width:600px) and (min-width:400px){
+  .form{
+    width: 380px;
+    margin-top: -27px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .form{
+    width: 300px;
+    margin-top: -27px;
+  }
+}
+    
+@media screen and (max-width:399px)
+{
+  .form{
+    width: 320px;
+    margin-top: -27px;
+    
+  }
+
+  @media screen and (max-width:320px)
+{
+  .form{
+    width: 290px;
+    margin-top: -27px;
+    
+  }
+  .container{
+    height: 610px;
+  }
+}
+}
